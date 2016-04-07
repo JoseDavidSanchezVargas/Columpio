@@ -171,7 +171,7 @@
                         <div class="col-lg-5 col-md-6 col-xs-12 cong-info-product">
 
                             <h1>SWING<br><span>chalky white</span></h1>
-                            <h3 class="price">€ <b>150.00</b></h3>
+                            <h3 class="price">€ 150.00</h3>
 
                             <!-- Custom Product -->
                             <form class="opt-custom-product">
@@ -326,28 +326,32 @@
     <script src="assets/js/scripts-general.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $(function($) {
-                $('.number-items-01').Incrementer();
-            });
-			
-			
-		var slider = new MasterSlider();
+	
+				var slider = new MasterSlider();
+				slider.control('thumblist', {
+					width:102, height:102,
+            autohide: false,
+            dir: 'h',
+			align:'bottom',
+            arrows: true,
+			space:20,
+        });
+		
         slider.setup('producto', {
             width: 452,
             height: 452,
             space: 0,
             view: 'basic',
             dir: 'h'
-        });
-        slider.control('thumblist', {
-            width: 102,
-            autohide: false,
-            dir: 'h',
-            arrows: true,
-        });
+        });	
+	
+        $(document).ready(function() {
 			
-        });
+            $(function($) {
+                $('.number-items-01').Incrementer();
+            });
+
+		 });
 
 
     </script>
