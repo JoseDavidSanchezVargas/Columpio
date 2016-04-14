@@ -49,10 +49,10 @@
 
             <button class="btn-close"></button>
             <ul class="list-unstyled first-menu sf-menu">
-                <li><a href="swing.html">Swing</a>
+                <li>Swing
                     <ul class="list-unstyled">
-                        <li><a href="#" class="active">Baby</a></li>
-                        <li><a href="#">Adult</a></li>
+                        <li><a href="swing.html" class="active">Baby</a></li>
+                        <li><a href="swing.html">Adult</a></li>
                     </ul>
                 </li>
                 <li><a href="carts.html">Carts</a></li>
@@ -98,7 +98,7 @@
                 <li>
                     <div>
                         <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- grey</h4>
+                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
                             <div class="col-xs-4 text-right">€ 150.00</div>
                         </div>
                         <div class="col-xs-12 item-resumen">
@@ -106,7 +106,7 @@
                             <div class="col-xs-4 text-right">€ 150.00</div>
                         </div>
                         <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- grey</h4>
+                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
                             <div class="col-xs-4 text-right">€ 50.00</div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                         <div class="col-md-6 col-xs-12">
 
                             <!-- masterslider -->
-                            <div class="master-slider ms-skin-default" id="producto">
+                            <div class="master-slider" id="producto">
                                 <div class="ms-slide">
                                     <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-01.jpg" alt="lorem ipsum dolor sit" />
                                     <img class="ms-thumb" src="assets/images/swing/product/thumb-01.jpg" alt="thumb" />
@@ -245,22 +245,29 @@
                                 <hr>
 
                                 <!-- Tab panes -->
-                                <div class="tab-content">
+                                <div class="tab-content contg-info-tabs">
+                                
                                     <article role="tabpanel" class="tab-pane active fade in active" id="description">
+                                    <div class="scroll-pane">
                                         <p> Posa dolorem lab imporesseque pero bero opta vellupit ex eicim vitatest, volorro el molecatae ex evero quiatem quia conempo renimus, cum re plab in commolo quidebis restio offic te ped molore dioritam, sus re molum quam, quia adipicipidem venet dus reste issum aut essi dolupic tiorestis et unt la.</p>
-                                        <p> Uriate apiendant plaborum nis dis nonseque eum ipis sum inventio. Sollectae nobitia at rem res rerrum vollace peliam quam aliquissusam volori cupta autem coreprernam qui cus de enti officient aciiste is dolorio restrum restium dolestorrum id mos re pe et accaborrora</p>
+                                        <p> Uriate apiendant plaborum nis dis nonseque eum ipis sum inventio. Sollectae nobitia at rem res rerrum vollace peliam quam aliquissusam volori cupta autem coreprernam qui cus de enti officient aciiste is dolorio restrum restium dolestorrum id mos re pe et accaborrora </p>
+                                        </div>
                                     </article>
-
+                                    
                                     <article role="tabpanel" class="tab-pane fade " id="details">
+                                    <div class="scroll-pane">
                                         <p>DIMENSIONS: 50×30×70 cm</p>
                                         <p>MATERIALS: Wood, textile (70% cotton; 30% polyestere), other.</p>
                                         <p>CARE: Maximis. Habit? qua merficaveri, num possenam in deat, ceperet reniceri popublibus locus. Fecris senata ducepero consi in auctam, quem di pulis diem nos sidinum dium renati convocc iocribuncem no. Opio ermihic ioritis, te inti, ut confeco C. Sendac intela quempop ublibes sunteat raritemperum
                                         </p>
+                                        </div>
                                     </article>
 
                                     <article role="tabpanel" class="tab-pane fade " id="shippinginfo">
-                                        <p> Posa dolorem lab imporesseque pero bero opta vellupit ex eicim vitatest, volorro el molecatae ex evero quiatem quia conempo renimus, cum re plab in commolo quidebis restio offic te ped molore dioritam, sus re molum quam, quia adipicipidem venet dus reste issum aut essi dolupic tiorestis et unt la.</p>
+                                    <div class="scroll-pane">
+                                        <p> Posa dolorem lab imporesseque pero bero opta vellupit ex eicim vitatest, volorro el molecatae ex evero quiatem quia conempo renimus, cum re plab in commolo quidebis restio offic te ped molore dioritam, sus re molum quam, quia adipicipidem venet dus reste issum aut essi dolupic tioresti</p>
                                     </article>
+                                    </div>
                                 </div>
 
 
@@ -327,9 +334,17 @@
 
     <script type="text/javascript">
 	
-				var slider = new MasterSlider();
+		var slider = new MasterSlider();
+		        slider.setup('producto', {
+            width: 452,
+            height: 452,
+            space: 20,
+            view: 'basic',
+        });	
+		
 				slider.control('thumblist', {
-					width:102, height:102,
+					width:102, 
+					height:102,
             autohide: false,
             dir: 'h',
 			align:'bottom',
@@ -337,13 +352,7 @@
 			space:20,
         });
 		
-        slider.setup('producto', {
-            width: 452,
-            height: 452,
-            space: 0,
-            view: 'basic',
-            dir: 'h'
-        });	
+
 	
         $(document).ready(function() {
 			

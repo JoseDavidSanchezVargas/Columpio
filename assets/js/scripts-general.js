@@ -549,12 +549,39 @@ $(function() {
         /*---- Forzar Touch IOS -----*/
 
         <!-- SCROLL PERSONALIZADO -->
-        $(function() {
-            $('.scroll-pane').jScrollPane({
-                showArrows: true
-            });
-        });
+$(function()
+{
+	$('.scroll-pane').each(
+		function()
+		{
+			$(this).jScrollPane(
+				{
+					showArrows: true
+				}
+			);
+			var api = $(this).data('jsp');
+			var throttleTimeout;
+			$(window).bind(
+				'resize',
+				function()
+				{
+					if (!throttleTimeout) {
+						throttleTimeout = setTimeout(
+							function()
+							{
+								api.reinitialise();
+								throttleTimeout = null;
+							},
+							50
+						);
+					}
+				}
+			);
+		}
+	)
 
+});
+		
 
         $(window).scroll(function() {
             if ($(document).scrollTop() > 300) {
