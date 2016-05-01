@@ -27,75 +27,93 @@
 
 </head>
 
-<body class="container-fluid max-width-01">
+<body class="container-fluid">
 
-    <header class="text-uppercase">
-        <a href="#" class="cont-logo"><img src="assets/images/logo.svg" width="50" height="55" alt=""></a>
+    <header class="text-uppercase hidden-xs">
+    
+            <ul class="list-unstyled list-inline links-info-general">
+            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Legal</a></li>
+        </ul>
+
+        <a href="home.html" class="cont-logo">
+            <img src="assets/images/logo.svg" width="50" height="55" alt="">
+        </a>
+
+        <!-- Cart / Idioma -->
+        <ul class="list-unstyled list-inline text-right cont-card_leng sf-menu">
+            <li class="btnm-cart-shot"><a href="shoopingcart.html">Cart<span>3</span></a>
+                <ul class="list-unstyled box-resumen-shop text-left shadow-01">
+                    <li>
+                        <div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 50.00</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+
+                        <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+
+                        <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hidden-xs">
+                <select class="text-uppercase select-black-01">
+                  <option>Eur</option>
+                  <option>Usd</option>
+                  <option>Gbp</option>
+                  <option>Jpy</option>
+                </select>
+            </li>
+        </ul>
+        <!-- END Cart / Idioma -->
+
     </header>
 
-    <!-- Cart / Idioma -->
-    <ul class="list-unstyled list-inline text-uppercase text-right cont-card_leng sf-menu">
-        <li class="btnm-cart-shot"><a href="#">Cart<span>3</span></a>
-            <ul class="list-unstyled box-resumen-shop text-left shadow-01">
-                <li>
-                    <div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 50.00</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+    <main>
+   
 
-                    <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
-
-                    <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
-
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <select class="text-uppercase select-black-01">
-<option>Eur</option>
-<option>Usd</option>
-<option>Gbp</option>
-<option>Jpy</option>
-</select>
-        </li>
-    </ul>
-    <!-- Cart / Idioma -->
-
-    <main class="height-full">
-        <div class="cont_content-02">
-
-            <div class="cont-column-l-shoopincart text-center">
-                <article class="center-v">
+            <div class="col-md-6 col-xs-12 cont-column-l-shoopincart text-center">
+                <article class="center-v hidden-xs">
                     <div class="icon-gift-01"></div>
                     <h2>WE KNOW YOU CARE</h2>
                     <h3>but we’ll wrap it for you</h3>
                 </article>
+                
+                 <article class="mensaje-gisf-mobile visible-xs">
+                    <div class="icon-gift-01"></div>
+                    <h2>IT’S A GIFT?</h2>
+                    <h3><b>check the gift option box</b><span>we’ll wrap it for you!</span></h3>
+                    <img class="arrow-gift" src="assets/images/arrow-gift.svg" width="22" height="61" alt="">
+                </article>
             </div>
 
-            <div class="pull-right cont-resumen-shop ">
-                <h1 class="text-uppercase">Your purchase<br><span class="text-lowercase">almost there!</span></h1>
+            <div class="col-md-6 col-xs-12 pull-right cont-resumen-shop ">
+                <h1 class="text-uppercase hidden-xs">Your purchase<br><span class="text-lowercase">almost there!</span></h1>
 
                 <form class="contg-list-resumen">
                 
-                    <div class="row cont-id-columns">
+                    <div class=" cont-id-columns hidden-xs">
                         <div class="col-xs-5 text-uppercase">Product</div>
                         <div class="col-xs-1 text-uppercase"><span class="icon-gift-02"></span></div>
                         <div class="col-xs-2 text-uppercase">Price</div>
                         <div class="col-xs-2 text-uppercase text-center">QTY</div>
                         <div class="col-xs-2 text-uppercase text-right">Total </div>
                     </div>
+                    <div class="clearfix"></div>
                     
                     <hr>
 
@@ -103,32 +121,7 @@
 
                         <!-- Item Shop -->
                         <div class="row item-resumen-shop">
-                            <div class="col-xs-5">
-                                <a>
-                                    <div class="img-item">
-                                        <img src="assets/images/shop/thumb-01.jpg" width="31" height="30" alt="" />
-                                    </div>
-                                    <div class="name-item">
-                                        <h3>BABY SWING - gray</h3>
-                                        <p>Brass + Black rope</p>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-xs-1 text-uppercase">                            
-                               <input type="checkbox" required class="checkbox-01" id="gift-01" value="">
-                               <label for="gift-01"></label>                          
-                            </div>
-                            <div class="col-xs-2 text-uppercase">€ 150.00</div>
-                            <div class="col-xs-2 text-uppercase incrementer-style-02"><input type="text" name="test" value="1" class="number-items-01" /></div>
-                            <div class="col-xs-2 text-uppercase text-right">€ 300.00</div>
-
-                        </div>
-                        <!-- END Item Shop -->
-
-                        <!-- Item Shop -->
-                        <div class="row item-resumen-shop">
-                            <div class="col-xs-5">
+                            <div class="col-sm-5 col-xs-8">
                                 <a>
                                     <div class="img-item">
                                         <img src="assets/images/shop/thumb-02.jpg" width="31" height="30" alt="" />
@@ -140,26 +133,54 @@
                                 </a>
 
                             </div>
-                            <div class="col-xs-1 text-uppercase">
+                            <div class="col-xs-1 col-xs-2 cont-check-gift text-uppercase">
+                               <input type="checkbox" required class="checkbox-01" id="gift-02" value="" data-toggle="modal" data-target="#gift-modal">
+                               <label for="gift-02"></label>
+                            </div>
+                            <div class="col-xs-2 text-uppercase hidden-xs">€ 150.00</div>
+                            <div class="col-xs-2 text-uppercase hidden-xs incrementer-style-02">
+                            <input type="text" name="test" value="1" class="number-items-02" />
+                            </div>
+                            <div class="col-sm-2 col-xs-3 text-uppercase text-right total-price-item"><button class="delete-icon-red visible-xs"></button><span class="visible-xs qty-mobile">2 x </span>€ 150.00</div>
+                            
+
+                        </div>
+                        <!-- END Item Shop -->
+
+                        <!-- Item Shop -->
+                        <div class="row item-resumen-shop">
+                            <div class="col-sm-5 col-xs-8">
+                                <a>
+                                    <div class="img-item">
+                                        <img src="assets/images/shop/thumb-02.jpg" width="31" height="30" alt="" />
+                                    </div>
+                                    <div class="name-item">
+                                        <h3>BABY SWING - gray</h3>
+                                        <p>Brass + Black rope</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col-xs-1 col-xs-2 cont-check-gift text-uppercase">
                                <input type="checkbox" required class="checkbox-01" id="gift-02" value="">
                                <label for="gift-02"></label>
                             </div>
-                            <div class="col-xs-2 text-uppercase">€ 150.00</div>
-                            <div class="col-xs-2 text-uppercase incrementer-style-02">
+                            <div class="col-xs-2 text-uppercase hidden-xs">€ 150.00</div>
+                            <div class="col-xs-2 text-uppercase hidden-xs incrementer-style-02">
                             <input type="text" name="test" value="1" class="number-items-02" />
-                            <button class="icon-update-01"></button>
+                            <button class="icon-update-01 "></button>
                             </div>
-                            <div class="col-xs-2 text-uppercase text-right">€ 150.00</div>
+                            <div class="col-sm-2 col-xs-3 text-uppercase text-right total-price-item"><button class="delete-icon-red visible-xs"></button>€ 150.00</div>
                             
-                            <div class="box-gift-wrapping">
+                            <div class="box-gift-wrapping hidden-xs">
                             <div class="col-sm-6">
                             
                                     <div class="cont-faq-icon">
                                         <div class="icon-faq-01 tip">
                                         <div class="smallipop-hint">
-                                        <h3>Ti facciamo il pacco blablabla
+                                        <h3 class="margin-b-02">Ti facciamo il pacco blablabla
 undandigent odi ommolore, aut!</h3>
-                                        <hr class="width-01">
+                                        <hr class="width-02">
                                         <p>Check the “Gift” option and we’ll wrap it for only 100$. You can also tell us what to write as gift message and we’ll add a sweet little card for
 you...basically, we are your slaves.</p>
                                         </div>
@@ -180,7 +201,7 @@ you...basically, we are your slaves.</p>
 
                         <!-- Item Shop -->
                         <div class="row item-resumen-shop">
-                            <div class="col-xs-5">
+                            <div class="col-sm-5 col-xs-8">
                                 <a>
                                     <div class="img-item">
                                         <img src="assets/images/shop/thumb-01.jpg" width="31" height="30" alt="" />
@@ -191,13 +212,13 @@ you...basically, we are your slaves.</p>
                                 </a>
 
                             </div>
-                            <div class="col-xs-1 text-uppercase">
+                            <div class="col-xs-1 cont-check-gift text-uppercase">
                                <input type="checkbox" required class="checkbox-01" id="gift-03" value="">
                                <label for="gift-03"></label>                          
                             </div>
-                            <div class="col-xs-2 text-uppercase">€ 50.00</div>
-                            <div class="col-xs-2 text-uppercase incrementer-style-02"><input type="text" name="test" value="1" class="number-items-03" /></div>
-                            <div class="col-xs-2 text-uppercase text-right">€ 50.00</div>
+                            <div class="col-xs-2 hidden-xs text-uppercase">€ 50.00</div>
+                            <div class="col-xs-2 text-uppercase hidden-xs incrementer-style-02"><input type="text" name="test" value="1" class="number-items-03" /></div>
+                            <div class="col-sm-2 col-xs-3 text-uppercase text-right total-price-item"><button class="delete-icon-red visible-xs"></button>€ 150.00</div>
 
                         </div>
                         <!-- END Item Shop -->
@@ -206,47 +227,47 @@ you...basically, we are your slaves.</p>
 
                     <hr>
 
-                    <div class="row margin-tb-03">
-                        <div class="col-xs-6 text-uppercase"><b>Subtotal</b></div>
-                        <div class="col-xs-6 text-uppercase text-right">€ 500.00</div>
+                    <div class="row margin-tb-03 hidden-xs">
+                        <div class="col-xs-7 text-uppercase"><b>Subtotal</b></div>
+                        <div class="col-xs-5 text-uppercase text-right">€ 500.00</div>
                     </div>
 
-                    <hr class="hr-02">
+                    <hr class="hr-02 hidden-xs">
 
-                    <div class="row margin-tb-03">
-                        <h5 class="col-xs-6 text-uppercase">Shipping costs <span>(we’ll take care of it!)</span></h5>
-                        <div class="col-xs-6 text-uppercase text-right">€ 0.00</div>
+                    <div class="row margin-tb-03 contg-shipping-cost">
+                        <h5 class="col-sm-6 col-xs-7 text-uppercase">Shipping costs <span>(we’ll take care of it!)</span></h5>
+                        <div class="col-sm-6 col-xs-5 text-uppercase text-right">€ 0.00</div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-6 text-uppercase">
+                    <div class="row contg-total-shoppingcart">
+                        <div class="col-sm-6 col-sm-offset-6 col-xs-12 text-uppercase">
                             <hr class="margin-t-null">
                             <div class="row margin-tb-03">
                                 <h5 class="col-xs-6">Total<br>
                     <span>(includes 21% VAT)</span>
                     </h5>
-                                <div class="col-xs-6 text-right"><b>€ 500.00</b></div>
+                                <div class="col-xs-6 text-right total-price"><b>€ 500.00</b></div>
                             </div>
                             <div class="text-right">
-                                <button class="btn-style-02">Go to Checkout</button>
+                                <button class="btn-style-02 btn-style-03-xs">Go to Checkout</button>
                             </div>
                         </div>
                     </div>
 
                 </form>
 
-                <div class="row">
-                    <div class="col-xs-6 col-xs-offset-6  text-right">
+                <div class="row ">
+                    <div class="col-sm-6 col-sm-offset-6 col-xs-12 text-right text-center-xs">
                         <p>or <a href="#" class="text-uppercase"><u>continue shopping</u></a></p>
                     </div>
                 </div>
             </div>
-        </div>
 
 
     </main>
 
-    <footer class="text-uppercase text-right">
+
+    <footer class="text-uppercase text-right hidden-xs">
         <ul class="list-unstyled list-inline">
             <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
             <li><a href="#">Faq</a></li>
@@ -254,9 +275,8 @@ you...basically, we are your slaves.</p>
         </ul>
     </footer>
 
-    <div class="cont-social_newsletter-02"></div>
 
-    <div class="copyright-footer text-uppercase text-right">2016 © La clinica Design</div>
+    <div class="copyright-footer text-uppercase text-right hidden-xs">2016 © La clinica Design</div>
 
     <!-- Terms & Privacy -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -279,6 +299,23 @@ you...basically, we are your slaves.</p>
                         <h3>Privacy & Payments</h3>
                         <p>Volupta tibusdam vel moluptatum et que consequas pliciment fugitinvel ilitibererem quae nulluptatquo et et quasit, odit et, quod et aceatiunt, corum evelitatur aut laut ut audist, nienitate era des earum quibus eati il minto magnatemque nonseri berupta ssinis rate acepudame corum nulparchit essequiate natendias eaquodis adi dent hillabo. Nus doloreperi te sum, ulpario volorem. Ad mo torenis delluptas dipid quis di omnistio. Maxime sinullectia ipiciis sim simus magnimi, intet rem ullent ommoditis seque la solorume et a explaborem incia doluptist quodita temporepudi re ni omnit que nonse volum aut et accustio blabores destiunt, ut fuga. Porepedissim volor suntusdae pa as debitibus nos sapid ut volorporrum quae molestia qui nis earumquia aut vene dem exerchi catempo rerrorporro mo dest, nis dus as sit aut quam faccus dunt ium eaqui consequis eum voluptatque dis a ad ullorrum et minihiciis sequi andesto des quaerunt, te verionsed maximpo reperiberi veliquidelit harumque aliquatiur, suntota turitate ni dolor aut offictum, quam aut aut receatibusda dolorio di nisquia ntisitium sa coresto qui con con natempor sitatenia sectiur.</p>
                     </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- GIFT Modal -->
+    <div class="modal fade text-center modal-style-02" id="gift-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content shadow-01">
+                <div class="modal-body">
+<div class="icon-gift-03"></div>
+                        <h2>WE KNOW YOU CARE<span>but we’ll wrap it for you</span></h2>
+                        <p>Cupicae factum aris se arbes nercem, publicio iam sulistr ehemnit egerviv irmis. Caterfici egil vita nori idem, coratiam patam cae, nonsimilium potiam nonsupp liculuternir hocris erfex me maiorum stius pulisquo virit? Ahala cepotala sa in ta fuga. Obis estrum excestem fugiaturiam, cusdant facil excea fuga. Obis estrum excestem fugiaturiam, cusdant facil excea Ehent aut essitate con evenihitat rehendisit evendam im fuga. Obis estrum excestem fugiaturiam, cusdant facil excea inullup tatur, omnimaio test atia vent, que doloribus mossequ</p>
+
 
                 </div>
 

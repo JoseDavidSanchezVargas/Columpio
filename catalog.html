@@ -26,22 +26,67 @@
 
 </head>
 
-<body class="container-fluid max-width-01">
+<body class="container-fluid padding-lr-01">
 
-    <header class="text-uppercase">
+    <header class="text-uppercase container-move">
 
-        <a href="#" class="cont-logo"><img src="assets/images/logo.svg" width="50" height="55" alt=""></a>
-        
-          <div class="menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-          </div>
+        <div class="menu-btn visible-xs">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
+        <a href="home.html" class="cont-logo">
+            <img src="assets/images/logo.svg" width="50" height="55" alt="">
+        </a>
 
-        <nav class="pushy pushy-left">
-        
-        <button class="btn-close"></button>
+        <!-- Cart / Idioma -->
+        <ul class="list-unstyled list-inline text-right cont-card_leng sf-menu">
+            <li class="btnm-cart-shot"><a href="shoopingcart.html">Cart<span>3</span></a>
+                <ul class="list-unstyled box-resumen-shop text-left shadow-01">
+                    <li>
+                        <div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 50.00</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+
+                        <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+
+                        <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hidden-xs">
+                <select class="text-uppercase select-black-01">
+                  <option>Eur</option>
+                  <option>Usd</option>
+                  <option>Gbp</option>
+                  <option>Jpy</option>
+                </select>
+            </li>
+        </ul>
+        <!-- END Cart / Idioma -->
+
+    </header>
+
+    <div class="pushy pushy-left contg-menu text-uppercase">
+
+        <button class="btn-close visible-xs"></button>
+
+        <nav>
             <ul class="list-unstyled first-menu sf-menu">
                 <li>Swing
                     <ul class="list-unstyled">
@@ -60,11 +105,15 @@
                 <li><a href="press.html">Press</a></li>
             </ul>
         </nav>
-        
-        <div class="site-overlay"></div>
+
+        <ul class="list-unstyled list-inline links-info-general">
+            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Legal</a></li>
+        </ul>
 
         <!-- Social Links / Newletter -->
-        <div class="text-uppercase cont-social_newsletter">
+        <div class="cont-social_newsletter">
             <ul class="list-unstyled list-inline">
                 <li>
                     <a href="#" class="facebook-icon-01"></a>
@@ -74,99 +123,45 @@
                 </li>
             </ul>
 
-            <form>
+            <form class="hidden-xs">
                 <h3>Newsletter</h3>
                 <hr>
-                <input type="email" required placeholder="Enter your email" class="text-uppercase">
+                <input type="email" required placeholder="Enter your email">
                 <button type="submit" class="btn-style-01 text-uppercase">Sign up</button>
             </form>
+
         </div>
         <!-- END Social Links / Newletter -->
 
-    </header>
+        <div class="copyright-footer">2016 © La clinica Design</div>
 
-    <!-- Cart / Idioma -->
-    <ul class="list-unstyled list-inline text-uppercase text-right cont-card_leng sf-menu">
-        <li class="btnm-cart-shot"><a href="#">Cart<span>3</span></a>
-            <ul class="list-unstyled box-resumen-shop text-left shadow-01">
-                <li>
-                    <div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 50.00</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+    </div>
 
-                    <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+    <div class="site-overlay"></div>
 
-                    <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+    <main>
+        <div class="container-move">
 
-                </li>
-            </ul>
-        </li>
+            <div class="col-md-3 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 v-align-m margin-t-02"><img class="img-full-w" src="assets/images/catalog/catalog.png" width="622" height="897" alt="" /></div>
+            <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-4 col-xs-12 text-center-sm v-align-m"><a href="#" class="btn-style-02">Download PDF</a></div>
 
-        <li>
-            <select class="text-uppercase select-black-01">
-<option>Eur</option>
-<option>Usd</option>
-<option>Gbp</option>
-<option>Jpy</option>
-</select>
-        </li>
-    </ul>
-    <!-- Cart / Idioma -->
+            <div class="box-pink-03 col-sm-6 top center-vh"></div>
 
-    <main class="height-full">
 
-        <!-- Cont style 01 -->
-        <div class="cont_content-01">
-            <div class="center-v">
-            <div class="row">
-            
-            <div class="col-md-5 col-md-offset-3 text-center img-catalog">
-            <img class="center-block img-responsive" src="assets/images/catalog/catalog.png" width="311" height="449" alt=""/>
-            </div>
-            <div class="col-md-3 col-sm-12 text-center-sm download-catalog">
-            <a href="#" class="btn-style-02">Download PDF</a>
-            </div>
-             
-</div>
-
-      <div class="box-pink-01"></div>
-
-          </div>
         </div>
-        <!-- END Cont style 01 -->
-   
     </main>
 
-    <footer class="text-uppercase text-right">
-        <ul class="list-unstyled list-inline">
-            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Legal</a></li>
-        </ul>
-    </footer>
+    <div class="gradient-white-b-01 visible-xs"></div>
 
-<div class="cont-social_newsletter-02"></div>
-
-    <div class="copyright-footer text-uppercase text-right">2016 © La clinica Design</div>
-    
     <!-- Terms & Privacy -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
         <div class="modal-dialog" role="document">
             <div class="modal-content shadow-01">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="text-center text-uppercase visible-xs">Terms & legal</h5>
+
                 <div class="modal-body">
 
                     <div class="scroll-pane">
@@ -189,10 +184,7 @@
         </div>
     </div>
 
-
     <script src="assets/js/scripts-general.js"></script>
-    
-
 
 </body>
 

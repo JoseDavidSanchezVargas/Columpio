@@ -24,26 +24,23 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/select.min.js"></script>
     <script src="assets/js/video-fullsc.js"></script>
-    
-        <script>
-	    $(document).ready(function() {
-        $('select').selectpicker();
 
-			$('.dropdown-toggle span').bind("DOMSubtreeModified",function(){
+    <script>
+        $(document).ready(function() {
+            $('select').selectpicker();
+
+            $('.dropdown-toggle span').bind("DOMSubtreeModified", function() {
                 $('#btn-enter').addClass("show");
             });
-       });
+        });
     </script>
-
-
 </head>
 
-<body class="container-fluid" data-vide-bg="assets/video/columpio">
+<body class="container-fluid text-center" data-vide-bg="assets/video/columpio">
 
-    <div class="center-v text-center">
-        <div class="row">
-            <div class="cont-selectountry">
-                <select class="selectpicker form-control select-white-01" id="select-country" data-size="5" data-live-search="true">
+    <div class="center-v width-01 center-block hidden-xs">
+        <div class="cont-selectountry">
+            <select class="selectpicker form-control select-white-01" id="select-country" data-size="5" data-live-search="true">
                     <option selected disabled>Select Country</option>
                     <option>Bélgica</option>
                     <option>USA</option>
@@ -51,16 +48,18 @@
                     <option>HOLAND</option>
                     <option>SWITZ</option>
                     <option>AUSTRALIA</option>
-
-</select>
-
-<a href="#" class="arrowenter-select" id="btn-enter"><span></span></a>
-
-            </div>
+                 </select>
+            <a href="#" class="arrowenter-select" id="btn-enter"><span></span></a>
         </div>
     </div>
 
-
+    <div class="intro-mobile visible-xs">
+        <ul class=" center-v list-unstyled">
+            <li><a href="#" class="btn-style-02">Spain</a></li>
+            <li><a href="#" class="btn-style-02">Europe</a></li>
+            <li><a href="#" class="btn-style-02">Rest of the world</a></li>
+        </ul>
+    </div>
 
 </body>
 

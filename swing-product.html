@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no">
 
-    <title>Swing</title>
+    <title>Catalog</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
@@ -29,25 +29,65 @@
     <script src="assets/js/masterslider.js"></script>
     <script src="assets/js/jscrollpane.min.js"></script>
 
-
 </head>
 
-<body class="container-fluid max-width-01">
+<body class="container-fluid padding-lr-01">
 
-    <header class="text-uppercase">
+    <header class="text-uppercase container-move">
 
-        <a href="#" class="cont-logo"><img src="assets/images/logo.svg" width="50" height="55" alt=""></a>
+        <a class="btn-goback visible-xs"></a>
 
-        <div class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <a href="home.html" class="cont-logo">
+            <img src="assets/images/logo.svg" width="50" height="55" alt="">
+        </a>
 
+        <!-- Cart / Idioma -->
+        <ul class="list-unstyled list-inline text-right cont-card_leng sf-menu">
+            <li class="btnm-cart-shot"><a href="shoopingcart.html">Cart<span>3</span></a>
+                <ul class="list-unstyled box-resumen-shop text-left shadow-01">
+                    <li>
+                        <div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 50.00</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
 
-        <nav class="pushy pushy-left">
+                        <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
 
-            <button class="btn-close"></button>
+                        <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hidden-xs">
+                <select class="text-uppercase select-black-01">
+                  <option>Eur</option>
+                  <option>Usd</option>
+                  <option>Gbp</option>
+                  <option>Jpy</option>
+                </select>
+            </li>
+        </ul>
+        <!-- END Cart / Idioma -->
+
+    </header>
+
+    <div class="pushy pushy-left contg-menu text-uppercase">
+
+        <button class="btn-close visible-xs"></button>
+
+        <nav>
             <ul class="list-unstyled first-menu sf-menu">
                 <li>Swing
                     <ul class="list-unstyled">
@@ -67,10 +107,14 @@
             </ul>
         </nav>
 
-        <div class="site-overlay"></div>
+        <ul class="list-unstyled list-inline links-info-general">
+            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Legal</a></li>
+        </ul>
 
         <!-- Social Links / Newletter -->
-        <div class="text-uppercase cont-social_newsletter">
+        <div class="cont-social_newsletter">
             <ul class="list-unstyled list-inline">
                 <li>
                     <a href="#" class="facebook-icon-01"></a>
@@ -80,234 +124,223 @@
                 </li>
             </ul>
 
-            <form>
+            <form class="hidden-xs">
                 <h3>Newsletter</h3>
                 <hr>
-                <input type="email" required placeholder="Enter your email" class="text-uppercase">
+                <input type="email" required placeholder="Enter your email">
                 <button type="submit" class="btn-style-01 text-uppercase">Sign up</button>
             </form>
+
         </div>
         <!-- END Social Links / Newletter -->
 
-    </header>
+        <div class="copyright-footer">2016 © La clinica Design</div>
 
-    <!-- Cart / Idioma -->
-    <ul class="list-unstyled list-inline text-uppercase text-right cont-card_leng sf-menu">
-        <li class="btnm-cart-shot"><a href="#">Cart<span>3</span></a>
-            <ul class="list-unstyled box-resumen-shop text-left shadow-01">
-                <li>
-                    <div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 50.00</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+    </div>
 
-                    <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+    <main>
+        <div class="container-move">
 
-                    <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+            <div class=" col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0 contg-product">
 
-                </li>
-            </ul>
-        </li>
+                <div class="row">
 
-        <li>
-            <select class="text-uppercase select-black-01">
-<option>Eur</option>
-<option>Usd</option>
-<option>Gbp</option>
-<option>Jpy</option>
-</select>
-        </li>
-    </ul>
-    <!-- Cart / Idioma -->
+                    <div class="col-md-6 col-xs-12 panding-lr-null-xs">
 
-    <main class="height-full">
-
-        <!-- Cont style 01 -->
-        <div class="cont_content-02">
-            <div class="row contg-product">
-                <div class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0">
-                    <div class="row">
-
-                        <div class="col-md-6 col-xs-12">
-
-                            <!-- masterslider -->
-                            <div class="master-slider" id="producto">
-                                <div class="ms-slide">
-                                    <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-01.jpg" alt="lorem ipsum dolor sit" />
-                                    <img class="ms-thumb" src="assets/images/swing/product/thumb-01.jpg" alt="thumb" />
-                                </div>
-                                <div class="ms-slide">
-                                    <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-02.jpg" alt="lorem ipsum dolor sit" />
-                                    <img class="ms-thumb" src="assets/images/swing/product/thumb-02.jpg" alt="thumb" />
-                                </div>
-                                <div class="ms-slide">
-                                    <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-03.jpg" alt="lorem ipsum dolor sit" />
-                                    <img class="ms-thumb" src="assets/images/swing/product/thumb-03.jpg" alt="thumb" />
-                                </div>
-                                <div class="ms-slide">
-                                    <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-04.jpg" alt="lorem ipsum dolor sit" />
-                                    <img class="ms-thumb" src="assets/images/swing/product/thumb-04.jpg" alt="thumb" />
-                                </div>
-                                <div class="ms-slide">
-                                    <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-05.jpg" alt="lorem ipsum dolor sit" />
-                                    <img class="ms-thumb" src="assets/images/swing/product/thumb-05.jpg" alt="thumb" />
-                                </div>
+                        <!-- SLIDER PRODUCTO -->
+                        <div class="master-slider" id="producto">
+                            <div class="ms-slide">
+                                <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-01.jpg" alt="lorem ipsum dolor sit" />
+                                <img class="ms-thumb" src="assets/images/swing/product/thumb-01.jpg" alt="thumb" />
                             </div>
-                            <!-- end of masterslider -->
+                            <div class="ms-slide">
+                                <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-02.jpg" alt="lorem ipsum dolor sit" />
+                                <img class="ms-thumb" src="assets/images/swing/product/thumb-02.jpg" alt="thumb" />
+                            </div>
+                            <div class="ms-slide">
+                                <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-03.jpg" alt="lorem ipsum dolor sit" />
+                                <img class="ms-thumb" src="assets/images/swing/product/thumb-03.jpg" alt="thumb" />
+                            </div>
+                            <div class="ms-slide">
+                                <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-04.jpg" alt="lorem ipsum dolor sit" />
+                                <img class="ms-thumb" src="assets/images/swing/product/thumb-04.jpg" alt="thumb" />
+                            </div>
+                            <div class="ms-slide">
+                                <img src="assets/images/masterslider/blank.gif" data-src="assets/images/swing/product/photo-05.jpg" alt="lorem ipsum dolor sit" />
+                                <img class="ms-thumb" src="assets/images/swing/product/thumb-05.jpg" alt="thumb" />
+                            </div>
+                        </div>
+                        <!-- END SLIDER PRODUCTO -->
 
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-xs-12 v-align-t cong-info-product">
+
+                        <div class="row">
+                            <h1 class="col-sm-12 col-xs-6">SWING<br><span>chalky white</span></h1>
+                            <h3 class="col-sm-12 col-xs-6 price v-align-t text-right-xs">€ 150.00 <span class="visible-xs">incl. VAT & delivery </span></h3>
                         </div>
 
-                        <div class="col-lg-5 col-md-6 col-xs-12 cong-info-product">
+                        <!-- Custom Product -->
+                        <form class="opt-custom-product hidden-xs">
 
-                            <h1>SWING<br><span>chalky white</span></h1>
-                            <h3 class="price">€ 150.00</h3>
-
-                            <!-- Custom Product -->
-                            <form class="opt-custom-product">
-
-                                <div class="row margin-tb-02">
-                                    <h5 class="col-xs-4 text-uppercase">Pick a color:</h5>
-                                    <div class="col-ms-6 col-xs-8">
-                                        <select class="selectpicker form-control select-white-02">
+                            <div class="row margin-tb-02">
+                                <h5 class="col-xs-4 text-uppercase">Pick a color:</h5>
+                                <div class="col-ms-6 col-xs-8">
+                                    <select class="selectpicker form-control select-white-02">
                         <option data-icon="chose-color-white">Chalky White</option>
                         <option data-icon="chose-color-pink">Pinky Pink</option>
                         <option data-icon="chose-color-blue">Strawberry-blue</option>
                         <option data-icon="chose-color-smurf">Smurfs</option>
                         <option data-icon="chose-color-yellow">Neon Yellow</option>
                         </select>
-                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="row margin-tb-02">
-                                    <h5 class="col-xs-4 text-uppercase">Select metal:</h5>
-                                    <div class="col-ms-6 col-xs-8">
-                                        <select class="selectpicker form-control select-white-02">
+                            <div class="row margin-tb-02">
+                                <h5 class="col-xs-4 text-uppercase">Select metal:</h5>
+                                <div class="col-ms-6 col-xs-8">
+                                    <select class="selectpicker form-control select-white-02">
                         <option data-icon="chose-metal-brass">Brass</option>
                         <option data-icon="chose-metal-aluminium">Aluminium</option>
                         </select>
-                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="row margin-tb-02">
-                                    <h5 class="col-xs-4 text-uppercase">Select rope:</h5>
-                                    <div class="col-ms-6 col-xs-8">
-                                        <select class="selectpicker form-control select-white-02">
+                            <div class="row margin-tb-02">
+                                <h5 class="col-xs-4 text-uppercase">Select rope:</h5>
+                                <div class="col-ms-6 col-xs-8">
+                                    <select class="selectpicker form-control select-white-02">
                         <option data-icon="chose-rope-white">White</option>
                         <option data-icon="chose-rope-black">Black</option>
                         <option data-icon="chose-rope-yellow">Yellow</option>
                         <option data-icon="chose-rope-green">Green</option>
                         </select>
-                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="row margin-tb-02">
-                                    <h5 class="col-xs-4 text-uppercase">Quantity:</h5>
-                                    <div class="col-xs-6"><input type="text" name="test" value="1" class="number-items-01" />
-                                    </div>
+                            <div class="row margin-tb-02">
+                                <h5 class="col-xs-4 text-uppercase">Quantity:</h5>
+                                <div class="col-xs-6"><input type="text" name="test" value="1" class="number-items-01" />
                                 </div>
+                            </div>
 
-                                <button type="submit" class="btn-style-02">+ add to cart</button>
+                            <button type="submit" class="btn-style-02">+ add to cart</button>
 
-                            </form>
-                            <!-- END Custom Product -->
+                        </form>
+                        <!-- MOBILE BTNS -->
+                        <button class="col-xs-12 btn-style-03 visible-xs add-to-cart-mobile">+ add to cart</button>
+                        <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                        <!-- MOBILE BTNS -->
+
+                        <!-- END Custom Product -->
 
 
-                            <!-- Info product -->
-                            <div class="contg-info-product tabs-style-01">
+                        <!-- Info product -->
+                        <div class="contg-info-product tabs-style-01 hidden-xs">
 
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs row" role="tablist">
-                                
-                                    <li role="presentation" class="active col-xs-4 text-uppercase">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs row" role="tablist">
+
+                                <li role="presentation" class="active col-xs-4 text-uppercase">
                                     <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a>
-                                    </li>
-                                    
-                                    <li role="presentation" class="col-xs-4 text-uppercase">
-                                    <a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a>
-                                    </li>
-                                    
-                                    <li role="presentation" class="col-xs-4 text-uppercase">
-                                    <a href="#shippinginfo" aria-controls="shippinginfo" role="tab" data-toggle="tab">Shippinginfo</a>
-                                    </li>
-                                    
-                                </ul>
-                                <hr>
+                                </li>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content contg-info-tabs">
-                                
-                                    <article role="tabpanel" class="tab-pane active fade in active" id="description">
+                                <li role="presentation" class="col-xs-4 text-uppercase">
+                                    <a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a>
+                                </li>
+
+                                <li role="presentation" class="col-xs-4 text-uppercase">
+                                    <a href="#shippinginfo" aria-controls="shippinginfo" role="tab" data-toggle="tab">Shippinginfo</a>
+                                </li>
+
+                            </ul>
+                            <hr>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content contg-info-tabs">
+
+                                <article role="tabpanel" class="tab-pane active fade in active" id="description">
+                                    <h3 class="visible-xs">Description</h3>
                                     <div class="scroll-pane">
                                         <p> Posa dolorem lab imporesseque pero bero opta vellupit ex eicim vitatest, volorro el molecatae ex evero quiatem quia conempo renimus, cum re plab in commolo quidebis restio offic te ped molore dioritam, sus re molum quam, quia adipicipidem venet dus reste issum aut essi dolupic tiorestis et unt la.</p>
                                         <p> Uriate apiendant plaborum nis dis nonseque eum ipis sum inventio. Sollectae nobitia at rem res rerrum vollace peliam quam aliquissusam volori cupta autem coreprernam qui cus de enti officient aciiste is dolorio restrum restium dolestorrum id mos re pe et accaborrora </p>
-                                        </div>
-                                    </article>
-                                    
-                                    <article role="tabpanel" class="tab-pane fade " id="details">
+                                    </div>
+                                </article>
+
+                                <article role="tabpanel" class="tab-pane fade " id="details">
+                                    <h3 class="visible-xs">Details</h3>
                                     <div class="scroll-pane">
                                         <p>DIMENSIONS: 50×30×70 cm</p>
                                         <p>MATERIALS: Wood, textile (70% cotton; 30% polyestere), other.</p>
                                         <p>CARE: Maximis. Habit? qua merficaveri, num possenam in deat, ceperet reniceri popublibus locus. Fecris senata ducepero consi in auctam, quem di pulis diem nos sidinum dium renati convocc iocribuncem no. Opio ermihic ioritis, te inti, ut confeco C. Sendac intela quempop ublibes sunteat raritemperum
                                         </p>
-                                        </div>
-                                    </article>
+                                    </div>
+                                </article>
 
-                                    <article role="tabpanel" class="tab-pane fade " id="shippinginfo">
+                                <article role="tabpanel" class="tab-pane fade " id="shippinginfo">
+                                    <h3 class="visible-xs">Shippinginfo</h3>
                                     <div class="scroll-pane">
                                         <p> Posa dolorem lab imporesseque pero bero opta vellupit ex eicim vitatest, volorro el molecatae ex evero quiatem quia conempo renimus, cum re plab in commolo quidebis restio offic te ped molore dioritam, sus re molum quam, quia adipicipidem venet dus reste issum aut essi dolupic tioresti</p>
-                                    </article>
                                     </div>
-                                </div>
-
-
-
-                                <article>
-
                                 </article>
+
                             </div>
-                            <!-- END Info product -->
 
                         </div>
-
+                        <!-- END Info product -->
 
                     </div>
+
                 </div>
             </div>
 
         </div>
-        <!-- END Cont style 01 -->
+
+
+        <div class="opt-select-mobile hidden-box-01 text-center visible-xs">
+            <h5 class="text-uppercase">Select rope color</h5>
+            <button class="btn-close visible-xs"></button>
+
+            <div class="text-left text-uppercase">
+
+                <!-- OPT -->
+                <a href="#" class="col-xs-4 text-center margin-tb-01 item-select-mobile">
+                    <figure>
+                        <img class="img-full-w" src="assets/images/swing/photo-06.jpg" width="290" height="290" alt="" />
+                    </figure>
+                    <h4>Yellow</h4>
+                </a>
+
+                <!-- END OPT -->
+
+                <!-- OPT -->
+                <a href="#" class="col-xs-4 text-center margin-tb-01 item-select-mobile">
+                    <figure>
+                        <img class="img-full-w" src="assets/images/swing/photo-04.jpg" width="290" height="290" alt="" />
+                    </figure>
+                    <h4>Minty mint</h4>
+                </a>
+                <!-- END OPT -->
+
+
+            </div>
+
+        </div>
 
     </main>
 
-    <footer class="text-uppercase text-right">
-        <ul class="list-unstyled list-inline">
-            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Legal</a></li>
-        </ul>
-    </footer>
-
-    <div class="cont-social_newsletter-02"></div>
-
-    <div class="copyright-footer text-uppercase text-right">2016 © La clinica Design</div>
+    <div class="gradient-white-b-01 visible-xs"></div>
 
     <!-- Terms & Privacy -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
         <div class="modal-dialog" role="document">
             <div class="modal-content shadow-01">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="text-center text-uppercase visible-xs">Terms & legal</h5>
+
                 <div class="modal-body">
 
                     <div class="scroll-pane">
@@ -330,41 +363,75 @@
         </div>
     </div>
 
+    <!-- Detalles producto -->
+    <div class="modal fade visible-xs" id="infoproduct-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content shadow-01">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="text-center text-uppercase visible-xs">Product Details</h5>
+
+                <div class="modal-body">
+
+                    <div class="contg-product-details"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/scripts-general.js"></script>
 
     <script type="text/javascript">
-	
-		var slider = new MasterSlider();
-		        slider.setup('producto', {
-            width: 452,
-            height: 452,
-            space: 20,
-            view: 'basic',
-        });	
-		
-				slider.control('thumblist', {
-					width:102, 
-					height:102,
-            autohide: false,
-            dir: 'h',
-			align:'bottom',
-            arrows: true,
-			space:20,
-        });
-		
-
-	
         $(document).ready(function() {
-			
+
+            /*-- SLIDER PRODUCTO */
+            var slider = new MasterSlider();
+            slider.setup('producto', {
+                fullwidth: true,
+                autoHeight: true,
+                space: 0,
+                view: 'basic',
+            });
+
+            slider.control('thumblist', {
+                width: 102,
+                height: 102,
+                autohide: false,
+                dir: 'h',
+                align: 'bottom',
+                arrows: true,
+                space: 20,
+            });
+            slider.control('bullets', {
+                autohide: false
+            });
+            /*-- END SLIDER PRODUCTO --*/
+
+            /*-- Cantidad producto --*/
             $(function($) {
                 $('.number-items-01').Incrementer();
             });
+            /*-- END  Cantidad producto --*/
 
-		 });
+            /*-- Boton Retroceder --*/
+            $('.btn-goback').click(function() {
+                parent.history.back();
+                return false;
+                /*-- END Boton Retroceder --*/
+            });
+        });
 
+        /* -- Esconder y mostrar Thumbs y puntos en slider */
+        $(window).on("load resize", function(e) {
+            $("#producto .ms-thumb-list").addClass("hidden-xs");
+            $("#producto .ms-bullets").addClass("visible-xs");
+        });
 
+        /*--- CLONE Produts detail in Modal ------*/
+        $(".contg-info-tabs").clone().prependTo(".contg-product-details");
     </script>
 
 </body>
-
 </html>

@@ -24,24 +24,71 @@
     <script src="assets/js/jscrollpane.min.js"></script>
     <script src="assets/js/scrollIt.js"></script>
 
+
+
 </head>
 
-<body class="container-fluid max-width-01">
+<body class="container-fluid padding-lr-01">
 
-    <header class="text-uppercase">
+    <header class="text-uppercase container-move">
 
-        <a href="#" class="cont-logo"><img src="assets/images/logo.svg" width="50" height="55" alt=""></a>
-
-        <div class="menu-btn">
+        <div class="menu-btn visible-xs">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
+        <a href="home.html" class="cont-logo">
+            <img src="assets/images/logo.svg" width="50" height="55" alt="">
+        </a>
 
-        <nav class="pushy pushy-left">
+        <!-- Cart / Idioma -->
+        <ul class="list-unstyled list-inline text-right cont-card_leng sf-menu">
+            <li class="btnm-cart-shot"><a href="shoopingcart.html">Cart<span>3</span></a>
+                <ul class="list-unstyled box-resumen-shop text-left shadow-01">
+                    <li>
+                        <div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
+                                <div class="col-xs-4 text-right">€ 150.00</div>
+                            </div>
+                            <div class="col-xs-12 item-resumen">
+                                <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
+                                <div class="col-xs-4 text-right">€ 50.00</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
 
-            <button class="btn-close"></button>
+                        <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+
+                        <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hidden-xs">
+                <select class="text-uppercase select-black-01">
+                  <option>Eur</option>
+                  <option>Usd</option>
+                  <option>Gbp</option>
+                  <option>Jpy</option>
+                </select>
+            </li>
+        </ul>
+        <!-- END Cart / Idioma -->
+
+    </header>
+
+    <div class="pushy pushy-left contg-menu text-uppercase">
+
+        <button class="btn-close visible-xs"></button>
+
+        <nav>
             <ul class="list-unstyled first-menu sf-menu">
                 <li>Swing
                     <ul class="list-unstyled">
@@ -54,17 +101,21 @@
             </ul>
 
             <ul class="list-unstyled second-menu">
-                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
                 <li><a href="making_of.html">Making Of</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="press.html">Press</a></li>
             </ul>
         </nav>
 
-        <div class="site-overlay"></div>
+        <ul class="list-unstyled list-inline links-info-general">
+            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Legal</a></li>
+        </ul>
 
         <!-- Social Links / Newletter -->
-        <div class="text-uppercase cont-social_newsletter">
+        <div class="cont-social_newsletter">
             <ul class="list-unstyled list-inline">
                 <li>
                     <a href="#" class="facebook-icon-01"></a>
@@ -74,268 +125,264 @@
                 </li>
             </ul>
 
-            <form>
+            <form class="hidden-xs">
                 <h3>Newsletter</h3>
                 <hr>
-                <input type="email" required placeholder="Enter your email" class="text-uppercase">
+                <input type="email" required placeholder="Enter your email">
                 <button type="submit" class="btn-style-01 text-uppercase">Sign up</button>
             </form>
+
         </div>
         <!-- END Social Links / Newletter -->
 
-    </header>
+        <div class="copyright-footer">2016 © La clinica Design</div>
 
-    <!-- Cart / Idioma -->
-    <ul class="list-unstyled list-inline text-uppercase text-right cont-card_leng sf-menu">
-        <li class="btnm-cart-shot"><a href="#">Cart<span>3</span></a>
-            <ul class="list-unstyled box-resumen-shop text-left shadow-01">
-                <li>
-                    <div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> -- white</h4>
-                            <div class="col-xs-4 text-right">€ 150.00</div>
-                        </div>
-                        <div class="col-xs-12 item-resumen">
-                            <h4 class="col-xs-8"><span class="text-uppercase">Baby Swing</span> — grey</h4>
-                            <div class="col-xs-4 text-right">€ 50.00</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 text-uppercase text-right total-price">Total* € 350.00</div>
+    </div>
 
-                    <div class="col-xs-12"><a href="#" class="btn-style-02">Check Out</a></div>
+    <div class="site-overlay"></div>
 
-                    <p class="col-xs-12">* All prices incluide VAT and shipping cost</p>
-
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <select class="text-uppercase select-black-01">
-<option>Eur</option>
-<option>Usd</option>
-<option>Gbp</option>
-<option>Jpy</option>
-</select>
-        </li>
-    </ul>
-    <!-- Cart / Idioma -->
-
-    <main class="height-full">
+    <main>
 
         <!-- GRID STYLE 01 -->
         <div class="contgrid-style-01 list-item" data-scroll-nav="0" data-scroll-index="0">
-            <div class="center-v">
-                <article class="info-section">
-                    <p> All our carts serve as stylish and adaptable ways to display various things, such as books and magazines, fashion accessories, plants and flowers, glasses, kitchen utensils... Can be used as display or auxiliary storage in restaurants, cafes, catering, shops.</p>
+            <article class="info-section hidden-xs">
+                <p> All our carts serve as stylish and adaptable ways to display various things, such as books and magazines, fashion accessories, plants and flowers, glasses, kitchen utensils... Can be used as display or auxiliary storage in restaurants, cafes, catering, shops.</p>
 
-                    <h3>WE CAN DESIGN AROUND YOUR NEEDS.</h3>
-                    <p>For those requiring a unique cart, or higher quantities, maybe for retail or commercial purposes, we offer the service to customize the design to your needs. This can include bespoke sizes, colours, fabrics andaccessories.</p>
+                <h3>WE CAN DESIGN AROUND YOUR NEEDS.</h3>
+                <p>For those requiring a unique cart, or higher quantities, maybe for retail or commercial purposes, we offer the service to customize the design to your needs. This can include bespoke sizes, colours, fabrics andaccessories.</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+                <a href="#" class="btn-style-02">Inquiry via mail</a>
+            </article>
 
-                <div class="objgrid-01">
-                    <a href="#" class="fx-h-01 text-center">
-                        <div class="layer-white"></div>
-                        <h2 class="text-uppercase center-v">Limited<br>One Wheel</h2>
-                        <img class="img-responsive" src="assets/images/carts/photo-01.jpg" width="272" height="270" alt="" />
-                    </a>
-                </div>
-                <div class="objgrid-02">
-                    <a href="#" class="fx-h-01 text-center">
-                        <div class="layer-white"></div>
-                        <h2 class="text-uppercase center-v">Il Carrello</h2>
-                        <img class="img-responsive" src="assets/images/carts/photo-02.jpg" width="272" height="360" alt="" />
-                    </a>
-                </div>
-                <div class="objgrid-03">
-                    <a href="#" class="fx-h-01 text-center">
-                        <div class="layer-white"></div>
-                        <h2 class="text-uppercase center-v">Limited<br>Two Wheels</h2>
-                        <img class="img-responsive" src="assets/images/carts/photo-03.jpg" width="173" height="227" alt="" />
-                    </a>
-                </div>
-                <div class="objgrid-04">
-                    <a href="#" class="fx-h-01 text-center">
-                        <div class="layer-white"></div>
-                        <h2 class="text-uppercase center-v">Trade show</h2>
-                        <img class="img-responsive" src="assets/images/carts/photo-04.jpg" width="372" height="279" alt="" />
-                    </a>
-                </div>
-                <div class="objgrid-05">
-                    <a href="#" class="fx-h-01 text-center">
-                        <div class="layer-white"></div>
-                        <h2 class="text-uppercase center-v">Still life cart</h2>
-                        <img class="img-responsive" src="assets/images/carts/photo-05.jpg" width="270" height="205" alt="" />
-                    </a>
-                </div>
-
+            <div class="objgrid-01">
+                <a href="#" class="fx-h-01 text-center">
+                    <div class="layer-white"></div>
+                    <h2 class="text-uppercase center-v">Limited<br>One Wheel</h2>
+                    <img class="img-full-w" src="assets/images/carts/photo-01.jpg" width="272" height="270" alt="" />
+                </a>
             </div>
+            <div class="objgrid-02">
+                <a href="#" class="fx-h-01 text-center">
+                    <div class="layer-white"></div>
+                    <h2 class="text-uppercase center-v">Il Carrello</h2>
+                    <img class="img-full-w" src="assets/images/carts/photo-02.jpg" width="272" height="360" alt="" />
+                </a>
+            </div>
+            <div class="objgrid-03">
+                <a href="#" class="fx-h-01 text-center">
+                    <div class="layer-white"></div>
+                    <h2 class="text-uppercase center-v">Limited<br>Two Wheels</h2>
+                    <img class="img-full-w" src="assets/images/carts/photo-03.jpg" width="173" height="227" alt="" />
+                </a>
+            </div>
+            <div class="objgrid-04">
+                <a href="#" class="fx-h-01 text-center">
+                    <div class="layer-white"></div>
+                    <h2 class="text-uppercase center-v">Trade show</h2>
+                    <img class="img-full-w" src="assets/images/carts/photo-04.jpg" width="372" height="279" alt="" />
+                </a>
+            </div>
+            <div class="objgrid-05">
+                <a href="#" class="fx-h-01 text-center">
+                    <div class="layer-white"></div>
+                    <h2 class="text-uppercase center-v">Still life cart</h2>
+                    <img class="img-full-w" src="assets/images/carts/photo-05.jpg" width="270" height="205" alt="" />
+                </a>
+            </div>
+
         </div>
         <!-- END GRID STYLE 01 -->
 
         <!-- GRID STYLE 02 -->
         <div class="contgrid-style-02 list-item" data-scroll-nav="1" data-scroll-index="1">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Limited <br>one wheel</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-01" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-01 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-06.jpg" width="571" height="429" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-06.jpg" width="571" height="429" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-07.jpg" width="272" height="202" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-07.jpg" width="272" height="202" alt="" />
                 </figure>
                 <figure class="objgrid-03">
-                    <img class="img-responsive" src="assets/images/carts/photo-08.jpg" width="372" height="278" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-08.jpg" width="372" height="278" alt="" />
                 </figure>
-
             </div>
+            
+            <article class="info-section product-01">
+                <h1 class="text-uppercase">Limited <br>one wheel<span class="visible-xs">One wheel cart</span></h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
+
+
         </div>
         <!-- END GRID STYLE 02 -->
 
         <!-- GRID STYLE 03 -->
         <div class="contgrid-style-03 list-item" data-scroll-nav="2" data-scroll-index="2">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Il carrello</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-02" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-02 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-09.jpg" width="371" height="495" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-09.jpg" width="371" height="495" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-10.jpg" width="271" height="271" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-10.jpg" width="271" height="271" alt="" />
                 </figure>
                 <figure class="objgrid-03">
-                    <img class="img-responsive" src="assets/images/carts/photo-11.jpg" width="371" height="278" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-11.jpg" width="371" height="278" alt="" />
                 </figure>
-
             </div>
+
+            <article class="info-section product-02">
+                <h1 class="text-uppercase">Il carrello<span class="visible-xs">Two wheels cart</span></h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
         </div>
         <!-- END GRID STYLE 03 -->
 
         <!-- GRID STYLE 04 -->
         <div class="contgrid-style-04 list-item" data-scroll-nav="3" data-scroll-index="3">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Limited<br>Tow wheels</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-03" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-03 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-12.jpg" width="271" height="359" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-12.jpg" width="271" height="359" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-13.jpg" width="371" height="492" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-13.jpg" width="371" height="492" alt="" />
                 </figure>
                 <figure class="objgrid-03">
-                    <img class="img-responsive" src="assets/images/carts/photo-14.jpg" width="271" height="201" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-14.jpg" width="271" height="201" alt="" />
                 </figure>
-
             </div>
+
+            <article class="info-section product-03">
+                <h1 class="text-uppercase">Limited<br>Tow wheels<span class="visible-xs">Two wheels cart</span></h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
+
         </div>
         <!-- END GRID STYLE 04 -->
 
         <!-- GRID STYLE 05 -->
         <div class="contgrid-style-05 list-item" data-scroll-nav="4" data-scroll-index="4">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Limited <br>one wheel</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-04" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-04 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-06.jpg" width="571" height="429" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-06.jpg" width="571" height="429" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-15.jpg" width="371" height="276" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-15.jpg" width="371" height="276" alt="" />
                 </figure>
                 <figure class="objgrid-03">
-                    <img class="img-responsive" src="assets/images/carts/photo-16.jpg" width="271" height="360" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-16.jpg" width="271" height="360" alt="" />
                 </figure>
-
             </div>
+
+            <article class="info-section product-04">
+                <h1 class="text-uppercase">Limited <br>one wheel</h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
+
         </div>
         <!-- END GRID STYLE 05 -->
 
         <!-- GRID STYLE 06 -->
         <div class="contgrid-style-06 list-item" data-scroll-nav="5" data-scroll-index="5">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Trade show</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-05" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-05 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-17.jpg" width="469" height="626" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-17.jpg" width="469" height="626" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-18.jpg" width="369" height="492" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-18.jpg" width="369" height="492" alt="" />
                 </figure>
-
             </div>
+
+            <article class="info-section product-05">
+                <h1 class="text-uppercase">Trade show</h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
+
         </div>
         <!-- END GRID STYLE 06 -->
 
         <!-- GRID STYLE 07 -->
         <div class="contgrid-style-07 list-item" data-scroll-nav="6" data-scroll-index="6">
-            <div class="center-v">
-                <article class="info-section">
-                    <h1 class="text-uppercase">Still life<br>cart</h1>
-                    <p>Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
 
-                    <a href="#" class="btn-style-02">Inquiry via mail</a>
-                </article>
+            <div id="carrousel-06" class="owl-carousel visible-xs"></div>
 
+            <div class="grid-carts-06 hidden-xs">
                 <figure class="objgrid-01">
-                    <img class="img-responsive" src="assets/images/carts/photo-19.jpg" width="469" height="352" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-19.jpg" width="469" height="352" alt="" />
                 </figure>
                 <figure class="objgrid-02">
-                    <img class="img-responsive" src="assets/images/carts/photo-20.jpg" width="269" height="269" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-20.jpg" width="269" height="269" alt="" />
                 </figure>
                 <figure class="objgrid-03">
-                    <img class="img-responsive" src="assets/images/carts/photo-21.jpg" width="369" height="276" alt="" />
+                    <img class="img-full-w" src="assets/images/carts/photo-21.jpg" width="369" height="276" alt="" />
                 </figure>
-
             </div>
+
+            <article class="info-section product-06">
+                <h1 class="text-uppercase">Still life<br>cart</h1>
+                <p class="hidden-xs">Bea con none re por aut volore, ullo debis pro qui iderovit derupta tiberum, sant, occatempel in rest acepers peleserum rempos sandionse voluptatur reperro que nus, el ium necus recepudi qui ditis simus repelen ditibuscias mollenis ipsaest fuga. Namus eic temquam eaquassequo bla</p>
+
+                <a href="#" class="btn-style-02 btn-style-03-xs">Inquiry via mail</a>
+
+                <!-- MOBILE BTN -->
+                <button class="col-xs-12 margin-tb-01 btn-style-04 visible-xs text-center text-uppercase" data-toggle="modal" data-target="#infoproduct-modal">Product Details</button>
+                <!-- MOBILE BTNS -->
+            </article>
+
         </div>
         <!-- END GRID STYLE 07 -->
+
+
     </main>
 
-    <footer class="text-uppercase text-right">
-        <ul class="list-unstyled list-inline">
-            <li><a data-toggle="modal" data-target="#myModal">Terms & Privacy</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Legal</a></li>
-        </ul>
-    </footer>
+    <button class="js-prev"><span class="arrow-up-01 hidden-xs"></span></button>
+    <button class="js-next"><span class="arrow-down-01 hidden-xs"></span></button>
 
-    <div class="cont-social_newsletter-02"></div>
-
-    <div class="copyright-footer text-uppercase text-right">2016 © La clinica Design</div>
-
-    <button class="js-prev"><span class="arrow-up-01"></span></button>
-    <button class="js-next"><span class="arrow-down-01"></span></button>
-
+    <div class="gradient-white-b-01 visible-xs"></div>
 
     <!-- Terms & Privacy -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -343,6 +390,9 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content shadow-01">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="text-center text-uppercase visible-xs">Terms & legal</h5>
+
                 <div class="modal-body">
 
                     <div class="scroll-pane">
@@ -364,12 +414,43 @@
             </div>
         </div>
     </div>
+    
+    <!-- Detalles producto -->
+    <div class="modal fade visible-xs" id="infoproduct-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
+        <div class="modal-dialog" role="document">
+            <div class="modal-content shadow-01">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+
+                <h5 class="text-center text-uppercase visible-xs">Product Details</h5>
+
+                <div class="modal-body">
+
+                    <div class="contg-product-details"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
     <script src="assets/js/scripts-general.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
 
     <script>
-        $(document).ready(function() {
+        /*--- CLONE Carouseles ------*/
+        $(".grid-carts-01 [class*=objgrid-]").clone().prependTo("#carrousel-01");
+        $(".grid-carts-02 [class*=objgrid-]").clone().prependTo("#carrousel-02");
+        $(".grid-carts-03 [class*=objgrid-]").clone().prependTo("#carrousel-03");
+        $(".grid-carts-04 [class*=objgrid-]").clone().prependTo("#carrousel-04");
+        $(".grid-carts-05 [class*=objgrid-]").clone().prependTo("#carrousel-05");
+        $(".grid-carts-06 [class*=objgrid-]").clone().prependTo("#carrousel-06");		
+		
+        /*--- CLONE Produts detail in Modal ------*/
+        $("[class*=contgrid-style] .product-01 p").clone().prependTo(".contg-product-details");
+		$(".contg-product-details p").removeClass("hidden-xs");			
 
+        $(document).ready(function() {
             /* DETECTAR SECION ON SCREEN */
             $(function() {
                 $.scrollIt({
@@ -378,9 +459,16 @@
                 });
             });
 
-        });
+            var owl = $("#carrousel-01, #carrousel-02, #carrousel-03, #carrousel-04, #carrousel-05, #carrousel-06");
+            owl.owlCarousel({
+                singleItem: true,
+                navigation: true,
+                autoHeight: true,
+            });
 
+        });
     </script>
+
 
 </body>
 
